@@ -11,3 +11,23 @@ body{
     background: var(--main);
     color:var(--sub);
 }
+
+.or{
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px dashed var(--sub);
+    border-top: 1px dashed var(--sub);
+    text-align: center;
+    opacity: .6;
+}
+
+hr{
+    border:none;
+    border-top: 1px dashed var(--sub);
+    height: 1px;
+    opacity: .6;
+}
+
+input {
+    opacity: .9;
+}
