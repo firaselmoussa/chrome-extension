@@ -1,0 +1,13 @@
+:root {
+    --main: #1a0063;
+    --sub: #ffffff;
+}
+
+body{
+    width:fit-content;
+    height:fit-content;
+    max-height: 90%;
+    padding: 10px;
+    background: var(--main);
+    color:var(--sub);
+}
