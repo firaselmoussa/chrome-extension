@@ -63,5 +63,6 @@ select{
     padding: 5px;
     color: var(--main);
     outline: none;
+    resize: none;
 }
 
