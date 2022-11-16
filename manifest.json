@@ -1,0 +1,9 @@
+{
+    "name":"chrome extension",
+    "descritption":"a chrome extension that does something",
+    "version":"1.0",
+    "manifist_version":3,
+    "background":{
+        "service_worker":"background.js"
+    }
+}
