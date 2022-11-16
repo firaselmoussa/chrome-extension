@@ -31,3 +31,37 @@ hr{
 input {
     opacity: .9;
 }
+
+textarea.input{
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--sub);
+    color:var(--sub);
+    opacity: 1;
+}
+
+.detected{
+    margin-top: -5px;
+}
+
+.function-btn{
+    background: var(--sub);
+    color:var(--main);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.function-btn:hover{
+    filter: drop-shadow(0 0 1px var(--sub));
+    transform: scale(1.01);
+}
+
+textarea,
+select{
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--main);
+    outline: none;
+}
+
