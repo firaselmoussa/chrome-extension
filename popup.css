@@ -58,6 +58,12 @@ textarea.input{
     transform: scale(1.01);
 }
 
+.function-btn:active{
+    background: var(--main);
+    color:var(--sub);
+    border: 1px solid var(--sub);
+}
+
 textarea,
 select{
     border-radius: 5px;
