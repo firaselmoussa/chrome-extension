@@ -5,6 +5,7 @@
 
 body{
     width:fit-content;
+    width: 300px;
     height:fit-content;
     max-height: 90%;
     padding: 10px;
@@ -66,3 +67,20 @@ select{
     resize: none;
 }
 
+textarea {
+    width: 96%;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+}
