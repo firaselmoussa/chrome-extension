@@ -1,7 +1,8 @@
 import langid
 from textblob import TextBlob
+from googletrans import Translator
 
-sample = "hello world!"
+sample = "Buongiorno!"
 sample1 = "helloo worldd"
 
 
@@ -14,5 +15,11 @@ def check_correct(input):
     return blob.correct()
 
 
-print(detectLanguage(sample))
-print(check_correct(sample1))
+def translate(input, translate_to):
+    translator = Translator()
+    translated_text = translator.translate(
+        input, dest=translate_to, src=detectLanguage(input))
+    return translated_text.text
+
+
+print(translate(sample, 'en'))
