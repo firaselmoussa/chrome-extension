@@ -11,9 +11,11 @@ chrome.tabs.executeScript( {
       const copy_btn = document.getElementById("copy_btn");
       const output_textarea = document.getElementById("output");
       const copy_alert = document.getElementById("copy_alert");
-
+      const language_detected = document.getElementById("language_detected");
+      
       check_btn.addEventListener("click", ()=>{
-          alert("here")
+        alert("here");
+
       })
 
       translate_btn.addEventListener("click", ()=>{

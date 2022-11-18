@@ -1,9 +1,21 @@
 import langid
 from textblob import TextBlob
 from googletrans import Translator
+import sys
+import json
+import ast
+
 
 sample = "Buongiorno!"
 sample1 = "helloo worldd"
+
+data_to_pass_back = "send to node."
+input = ast.literal_eval(sys.argv[1])
+output = input
+output.append(data_to_pass_back)
+print(json.dumps(output))
+
+sys.stdout.flush()
 
 
 def detectLanguage(input):
@@ -22,4 +34,4 @@ def translate(input, translate_to):
     return translated_text.text
 
 
-print(translate(sample, 'en'))
+# print(translate(sample, 'en'))
